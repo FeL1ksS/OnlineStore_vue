@@ -1,12 +1,13 @@
 <template>
   <div id="app">
     <left-nav></left-nav>
-    {{msg}}
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import leftNav from './components/left-nav.vue'
+
 
 
 export default {
@@ -17,12 +18,16 @@ export default {
     }
   },
   components: {
-    leftNav
+    leftNav,
   },
 }
 </script>
 
 <style>
-  @import '../node_modules/normalize.css';
-  @import '../node_modules/bootstrap/dist/css/bootstrap.css';
+  /* html,body{
+    height: 100%;
+  }
+  @import './assets/style/app.css'; */
+  /* @import '../node_modules/bootstrap/dist/css/bootstrap.css'; */
+  
 </style>

@@ -1,0 +1,17 @@
+html,
+body,
+#app{
+    height: 100%;
+    /* border: 1px solid orange; */
+}
+.page{
+    height: inherit;
+    box-sizing: border-box;
+
+    padding: 5px;
+    margin-left: 100px;
+
+    background: url('../img/page_backg.png');
+
+    /* border: 1px solid blue; */
+}

@@ -2,16 +2,20 @@
     <div>
         <div class="left-nav">
             <div class="left-nav__logo">
-                <img src="../assets/logo-blue.png" alt="">
+                <img src="../assets/img/logo-blue.png" alt="">
             </div>
             <div class="left-nav__content">
                 <button class="left-nav__button">
-                    <img src="../assets/home.svg" alt="" width="24">
+                    <i class="material-icons">home</i>
                 </button>
-                <button class="left-nav__button">К</button>
-                <button class="left-nav__button">П</button>
                 <button class="left-nav__button">
-                    <img src="../assets/log-out.svg" alt="" width="24">
+                    <i class="material-icons">shopping_basket</i>
+                </button>
+                <button class="left-nav__button">
+                    <i class="material-icons">search</i>
+                </button>
+                <button class="left-nav__button">
+                    <i class="material-icons">exit_to_app</i>
                 </button>
             </div>
         </div>
@@ -34,6 +38,8 @@
         height: 100%;
 
         position: fixed;
+        top: 0;
+        left: 0;
 
         background-color: rgb( 255, 255, 255);
         box-shadow: 0px 0px 25px 0px rgb( 219, 219, 219);
@@ -54,16 +60,24 @@
 
         /* border: 1px solid grey; */
     }
-    .left-nav__content img{
-        opacity: 0.3;
-    }
-
     .left-nav__button {
         height: 42px;
         margin: 10px 0;
+
+        cursor: pointer;
         background: none;
         border: none;
     }
+    .left-nav__button i{
+        transition: 0.4s;
+        opacity: 0.3;
+    }
+    .left-nav__button:hover i{
+        opacity: .8;
+        color: blue;
+    }
+
+
 
     .left-nav__button:last-child {
         margin-top: auto;
