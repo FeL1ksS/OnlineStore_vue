@@ -32,7 +32,7 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]?[hash]'
+          name: 'img/[name].[ext]?[hash]'
         }
       },
       {
@@ -48,7 +48,7 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: '[name].[ext]?[hash]'
+          name: 'font/[name].[ext]?[hash]'
         }
       }
     ]
