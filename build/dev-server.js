@@ -33,7 +33,7 @@ const hotMiddleware = require('webpack-hot-middleware')(compiler, {
   log: false,
   heartbeat: 2000
 })
-// force page reload when html-webpack-plugin template changes
+// force page reload when html-webpack-plugin template `cha`nges
 // currently disabled until this is resolved:
 // https://github.com/jantimon/html-webpack-plugin/issues/680
 // compiler.plugin('compilation', function (compilation) {
@@ -79,6 +79,12 @@ var server
 var portfinder = require('portfinder')
 portfinder.basePort = port
 
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../index.html'))
+})
+
+
 console.log('> Starting dev server...')
 devMiddleware.waitUntilValid(() => {
   portfinder.getPort((err, port) => {
@@ -96,6 +102,7 @@ devMiddleware.waitUntilValid(() => {
     _resolve()
   })
 })
+
 
 module.exports = {
   ready: readyPromise,
