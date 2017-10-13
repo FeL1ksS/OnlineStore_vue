@@ -51,7 +51,7 @@ module.exports = {
       {
         test: /\.css$/,
         loader: 'style-loader!css-loader',
-        include: [resolve('node_module')],
+        include: [resolve('../node_module')],
         // include: ['D:/Alexander/Project/node_module'],
         options: {
           limit: 10000,
