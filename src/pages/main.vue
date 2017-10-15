@@ -5,12 +5,9 @@
                 <h1>OLIOS</h1>
                 <p>NEWEST FURNITURE SHOP</p>
                 <p class="header__intro-bg-text">NEWEST</p>   
-                <!-- <router-link to="/catalog"> -->
-                    <button class="header__intro-button"
-                        onclick="location.href='/catalog'">
-                        VIEW MORE
-                    </button>
-                <!-- </router-link> -->
+                <router-link to="/catalog">
+                    <button class="header__intro-button">VIEW MORE</button>
+                </router-link>
             </div>
             <div class="header__content">
                 <div class="header__content-item">1</div>
