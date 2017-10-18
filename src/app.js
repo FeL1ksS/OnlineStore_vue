@@ -4,7 +4,7 @@ import App from './App.vue'
 import { routes } from './system/routes'
 
 import 'normalize.css'
-import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap-grid.css'
 import 'material-design-icons/iconfont/material-icons.css'
 import './assets/style/app.css';
 

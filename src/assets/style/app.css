@@ -10,25 +10,23 @@ body,
     box-sizing: border-box;
     padding: 5px;
     margin-left: 100px;
+    /* background: #848484; */
     background: url('../img/page_backg.png');
     /* border: 1px solid blue; */
 }
-@font-face {
-    font-family: Lato-Thin;
-    src: url('../font/Lato-Thin.ttf');
+
+
+.w-100 {
+    width: 100% !important;
 }
-@font-face {
-    font-family: Lato-Black;
-    src: url('../font/Lato-Black.ttf');
-}
+
+/*-------------------breadcrumb----------------- */
+
 .breadcrumb {
-    margin: 4% 0 2% 10%;
-    border: 1px solid black;
 }
 .breadcrumb__content {
     display: inline-block;
     margin: 0;
-
     text-decoration: none;
     list-style: none outside none;
     font-size: 4vmin;
@@ -48,23 +46,27 @@ ul.breadcrumb__content  {
     color: inherit;
     text-decoration: none;  
 }
-/* ul, menu, dir {
-    padding: 0;
-} */
-/* a {
-    color:white;
-    text-decoration: none;
+a {
+    all: unset;
+    margin: 0 auto;
 }
 
-a:hover 
-{
-     color: white; 
-     text-decoration:none; 
-     cursor:pointer;  
-} */
-/* a,a:link,a:visited,a:hover,a:focus,a:active {
-    all: unset; 
-        not work in IE11/EDGE 15-16
-    color: inherit;
-    text-decoration: none;  
-} */
+/*---------------------FONTS-------------------- */
+@font-face {
+    font-family: Lato-Thin;
+    src: url('../font/Lato-Thin.ttf');
+}
+@font-face {
+    font-family: Lato-Black;
+    src: url('../font/Lato-Black.ttf');
+}
+@font-face {
+    font-family: Lato-Light;
+    src: url('../font/Lato-Light.ttf');
+}
+@font-face {
+    font-family: Lato-Bold;
+    src: url('../font/Lato-Bold.ttf');
+}
+
+/*--------------------------------------------- */

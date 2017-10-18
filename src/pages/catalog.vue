@@ -1,39 +1,69 @@
 <template>
-    <div class="pg">
-        <div class="breadcrumb">
-            <ul class="breadcrumb__content">
-                <li>
-                    <a href="">PRODUCTS</a>
-                </li>
-                <li>
-                    <a href="">PRODUCTS2</a>
-                </li>
-            </ul>
-        </div>
-        <div class="container catalog">
-            <div class="row justify-content-start catalog__content">
-                <!-- <div class="col-md-12"> -->
-                    <div class="col-md-4">
-                        <div class="catalog__content-item">1</div>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="catalog__content-item">2</div>
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col-md-4">
-                        <div class="catalog__content-item">3</div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="catalog__content-item">4</div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="catalog__content-item">5</div>
-                    </div>
-                <!-- </div> -->
+    <div class="container-fluid catalog">
+        <div class="row justify-content-center ">
+            <div class="col-md-11 col-lg-8">
+                <div class="breadcrumb">
+                    <ul class="breadcrumb__content">
+                        <li>
+                            <a href="">PRODUCTS</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
         </div>
-
+        <div class="row justify-content-center catalog__content">
+            <div class="col-sm-12 col-md-3 col-lg-2">
+                <div class="catalog__content-item catalog__content-item_size_2">
+                    <img src="../assets/img/red-seat.png" alt="" srcset="">
+                    <div class="item-description">
+                        <h4>RED SEAT</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p class="catalog__item-price">$45</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-sm-12 col-md-8 col-lg-6">
+                <div class="catalog__content-item catalog__content-item_size_6">
+                    <img src="../assets/img/white-table.png" alt="" srcset="">
+                    <div class="item-description">
+                        <h4>WHITE TABLE</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p class="catalog__item-price">$350</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-100"></div>
+            <div class="col-sm-12 col-md-3 col-lg-2">
+                <div class="catalog__content-item catalog__content-item_size_2">
+                    <img src="../assets/img/blue-seat.png" alt="" srcset="">
+                    <div class="item-description">
+                        <h4>BLUE SEAT</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p class="catalog__item-price">$35</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-4">
+                <div class="catalog__content-item catalog__content-item_size_4">
+                    <img src="../assets/img/modern-bed.png" alt="" srcset="">
+                    <div class="item-description">
+                        <h4>RED SEAT</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p class="catalog__item-price">$120</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-11 col-lg-2">
+                <div class="catalog__content-item catalog__content-item_size_2">
+                    <img src="../assets/img/dark-seat.png" alt="" srcset="">
+                    <div class="item-description">
+                        <h4>RED SEAT</h4>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p class="catalog__item-price">$50</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -44,48 +74,152 @@ export default {
 </script>
 
 <style scoped>
-.pg {
-    height: 100%;
-    border: 1px solid red;
-    box-sizing: border-box;
-}
-
 .catalog {
-    /* display: flex;
+    height: inherit;
+    /* border: 1px solid black; */
+    overflow: auto;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start; */
-    /* box-sizing: border-box;
-    height: 70%;
-    */
-    /* width: initial; */
-    /* margin: 4% 20% 0 10%; */
-    border: 1px solid orange;
+    justify-content: center;
 }
 
 .catalog__content {
-    /* padding: 10px; */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap; */
-}
-.col-md-2{
-}
-.catalog__content-item {
-    box-sizing: border-box;
-    height: 200px;
-    
-    margin: 10px 0;
-    padding: 10px;
-    /* margin: 20px; */
-    background: white;
-    border: 1px solid black;
+    margin-top: 20px;
 }
 
-.catalog__content-item:nth-child(2) {
-    /* margin-right: 0px; */
+.catalog__content-item {
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb( 255, 255, 255);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+    overflow: hidden;
 }
+
+.catalog__content-item:hover {
+    transition: all 0.3;
+    border: 2px solid orange;
+}
+
+
+
+.catalog__content-item img {}
+
+.catalog__content-item .item-description h4,
+p {
+    margin: 5px;
+    font-family: "Lato-Light";
+}
+
+.catalog__content-item .item-description h4 {
+    font-size: 2.6vh;
+}
+
+.catalog__content-item .item-description p {
+    font-size: 2.2vh;
+    color: #a8a8a8;
+}
+
+.catalog__content-item .item-description .catalog__item-price {
+    margin-top: 15px;
+    color: blue;
+    font-size: 2vh;
+    letter-spacing: 1.5px;
+    font-family: "Lato-Bold";
+}
+
+
+/* -------------------------------------- */
+
+.catalog__content-item_size_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalog__content-item_size_2 img {
+    height: 50%;
+}
+
+.catalog__content-item_size_2 .catalog__item-price {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* -------------------------------------- */
+
+.catalog__content-item_size_4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalog__content-item_size_4 img {
+    width: 50%;
+    height: auto;
+}
+
+.catalog__content-item_size_4 .item-description {
+    margin: 0 5%;
+}
+
+.catalog__content-item_size_4 .item-description h4 {
+    font-size: 3.5vh;
+}
+
+.catalog__content-item_size_4 .item-description p {
+    font-size: 2.5vh;
+    /* margin-bottom:  */
+}
+
+.catalog__content-item_size_4 .item-description .catalog__item-price {
+    margin-top: 10px;
+    font-size: 2.5vh;
+}
+
+
+/* -------------------------------------- */
+
+.catalog__content-item_size_6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalog__content-item_size_6 img {
+    display: block;
+    width: 50%;
+    height: auto;
+}
+
+.catalog__content-item_size_6 .item-description {
+    margin: 0 5%;
+}
+
+.catalog__content-item_size_6 .item-description h4 {
+    font-size: 3.5vh;
+}
+
+.catalog__content-item_size_6 .item-description p {
+    font-size: 2.5vh;
+    /* margin-bottom:  */
+}
+
+.catalog__content-item_size_6 .item-description .catalog__item-price {
+    margin-top: 10px;
+    font-size: 2.5vh;
+}
+
+
+/* -------------------------------------- */
 
 
 /* .catalog__content-item:nth-child(4){
