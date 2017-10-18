@@ -4,17 +4,53 @@ body,
     height: 100%;
     /* border: 1px solid orange; */
 }
-.page{
-    height: inherit;
+#app{
+    /* height: inherit; */
+    /* height: 100%; */
     box-sizing: border-box;
-
     padding: 5px;
     margin-left: 100px;
-
     background: url('../img/page_backg.png');
-
     /* border: 1px solid blue; */
 }
+@font-face {
+    font-family: Lato-Thin;
+    src: url('../font/Lato-Thin.ttf');
+}
+@font-face {
+    font-family: Lato-Black;
+    src: url('../font/Lato-Black.ttf');
+}
+.breadcrumb {
+    margin: 4% 0 2% 10%;
+    border: 1px solid black;
+}
+.breadcrumb__content {
+    display: inline-block;
+    margin: 0;
+
+    text-decoration: none;
+    list-style: none outside none;
+    font-size: 4vmin;
+    text-align: center;
+    font-family: "Lato-Thin";
+    font-weight: bold;
+}
+.breadcrumb__content li {
+    display: inline;
+}
+ul.breadcrumb__content  {
+    padding: 0;
+}
+.breadcrumb__content a,a:link,a:visited,a:hover,a:focus,a:active {
+    /* all: unset;  */
+        /* not work in IE11/EDGE 15-16 */
+    color: inherit;
+    text-decoration: none;  
+}
+/* ul, menu, dir {
+    padding: 0;
+} */
 /* a {
     color:white;
     text-decoration: none;
@@ -25,4 +61,10 @@ a:hover
      color: white; 
      text-decoration:none; 
      cursor:pointer;  
+} */
+/* a,a:link,a:visited,a:hover,a:focus,a:active {
+    all: unset; 
+        not work in IE11/EDGE 15-16
+    color: inherit;
+    text-decoration: none;  
 } */

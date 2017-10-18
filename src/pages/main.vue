@@ -1,5 +1,5 @@
 <template>
-    <div class="page">
+    <!-- <div class="page"> -->
         <header class="header">
             <div class="header__intro">
                 <h1>OLIOS</h1>
@@ -17,7 +17,7 @@
                 <div class="header__content-item">5</div>
             </div>
         </header>
-    </div>
+    <!-- </div> -->
 </template>
 
 <script>
@@ -65,7 +65,7 @@ export default {
 
         /* position:absolute; top:0; text-align:center; ; */
 
-        opacity: .03;
+        opacity: .1;
         z-index: -1;
 
         font-family: "Lato-Black";
