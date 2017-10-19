@@ -8,18 +8,26 @@ body,
     /* height: inherit; */
     /* height: 100%; */
     box-sizing: border-box;
-    padding: 5px;
+    /* padding: 5px; */
     margin-left: 100px;
     /* background: #848484; */
     background: url('../img/page_backg.png');
     /* border: 1px solid blue; */
 }
-
+.border{
+    border: 1px solid black;
+}
 
 .w-100 {
     width: 100% !important;
 }
-
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
 /*-------------------breadcrumb----------------- */
 
 .breadcrumb {
@@ -50,6 +58,49 @@ a {
     all: unset;
     margin: 0 auto;
 }
+
+
+/*---------------------Catalog-------------------- */
+
+.catalog__content-item .item-description .title, .subtitle {
+    margin: 5px;
+    font-family: "Lato-Light";
+}
+
+.catalog__content-item .item-description .title {
+    font-size: 2.6vh;
+}
+
+.catalog__content-item .item-description .subtitle {
+    font-size: 2.2vh;
+    color: #a8a8a8;
+}
+
+.catalog__content-item .item-description .price {
+    margin-top: 15px;
+    color: blue;
+    font-size: 2vh;
+    letter-spacing: 1.5px;
+    font-family: "Lato-Bold";
+}
+
+/*---------------------Header-button-------------------- */
+
+.header__intro-button{
+    height: 42px;
+    width: 144px;
+
+    color: white;
+    font-family: "Lato-Black";
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: #0023ff;        
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
 
 /*---------------------FONTS-------------------- */
 @font-face {

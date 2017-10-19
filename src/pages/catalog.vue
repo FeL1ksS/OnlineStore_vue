@@ -16,9 +16,9 @@
                 <div class="catalog__content-item catalog__content-item_size_2">
                     <img src="../assets/img/red-seat.png" alt="" srcset="">
                     <div class="item-description">
-                        <h4>RED SEAT</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p class="catalog__item-price">$45</p>
+                        <h4 class="title">RED SEAT</h4>
+                        <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                        <p class="price">$45</p>
                     </div>
                 </div>
             </div>
@@ -26,9 +26,9 @@
                 <div class="catalog__content-item catalog__content-item_size_6">
                     <img src="../assets/img/white-table.png" alt="" srcset="">
                     <div class="item-description">
-                        <h4>WHITE TABLE</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p class="catalog__item-price">$350</p>
+                        <h4 class="title">WHITE TABLE</h4>
+                        <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                        <p class="price">$350</p>
                     </div>
                 </div>
             </div>
@@ -37,9 +37,9 @@
                 <div class="catalog__content-item catalog__content-item_size_2">
                     <img src="../assets/img/blue-seat.png" alt="" srcset="">
                     <div class="item-description">
-                        <h4>BLUE SEAT</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p class="catalog__item-price">$35</p>
+                        <h4 class="title">BLUE SEAT</h4>
+                        <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                        <p class="price">$35</p>
                     </div>
                 </div>
             </div>
@@ -47,9 +47,9 @@
                 <div class="catalog__content-item catalog__content-item_size_4">
                     <img src="../assets/img/modern-bed.png" alt="" srcset="">
                     <div class="item-description">
-                        <h4>RED SEAT</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p class="catalog__item-price">$120</p>
+                        <h4 class="title">RED SEAT</h4>
+                        <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                        <p class="price">$120</p>
                     </div>
                 </div>
             </div>
@@ -57,9 +57,9 @@
                 <div class="catalog__content-item catalog__content-item_size_2">
                     <img src="../assets/img/dark-seat.png" alt="" srcset="">
                     <div class="item-description">
-                        <h4>RED SEAT</h4>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                        <p class="catalog__item-price">$50</p>
+                        <h4 class="title">RED SEAT</h4>
+                        <p class="subtitle">Lorem ipsum dolor sit amet.</p>
+                        <p class="price">$50</p>
                     </div>
                 </div>
             </div>
@@ -73,7 +73,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .catalog {
     height: inherit;
     /* border: 1px solid black; */
@@ -109,22 +109,21 @@ export default {
 
 .catalog__content-item img {}
 
-.catalog__content-item .item-description h4,
-p {
+.catalog__content-item .item-description .title, .subtitle{
     margin: 5px;
     font-family: "Lato-Light";
 }
 
-.catalog__content-item .item-description h4 {
+.catalog__content-item .item-description .title {
     font-size: 2.6vh;
 }
 
-.catalog__content-item .item-description p {
+.catalog__content-item .item-description .subtitle {
     font-size: 2.2vh;
     color: #a8a8a8;
 }
 
-.catalog__content-item .item-description .catalog__item-price {
+.catalog__content-item .item-description .price {
     margin-top: 15px;
     color: blue;
     font-size: 2vh;
@@ -146,7 +145,7 @@ p {
     height: 50%;
 }
 
-.catalog__content-item_size_2 .catalog__item-price {
+.catalog__content-item_size_2 .price {
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -170,16 +169,16 @@ p {
     margin: 0 5%;
 }
 
-.catalog__content-item_size_4 .item-description h4 {
+.catalog__content-item_size_4 .item-description .title {
     font-size: 3.5vh;
 }
 
-.catalog__content-item_size_4 .item-description p {
+.catalog__content-item_size_4 .item-description .subtitle {
     font-size: 2.5vh;
     /* margin-bottom:  */
 }
 
-.catalog__content-item_size_4 .item-description .catalog__item-price {
+.catalog__content-item_size_4 .item-description .price {
     margin-top: 10px;
     font-size: 2.5vh;
 }
@@ -204,16 +203,16 @@ p {
     margin: 0 5%;
 }
 
-.catalog__content-item_size_6 .item-description h4 {
+.catalog__content-item_size_6 .item-description .title {
     font-size: 3.5vh;
 }
 
-.catalog__content-item_size_6 .item-description p {
+.catalog__content-item_size_6 .item-description .subtitle {
     font-size: 2.5vh;
     /* margin-bottom:  */
 }
 
-.catalog__content-item_size_6 .item-description .catalog__item-price {
+.catalog__content-item_size_6 .item-description .price {
     margin-top: 10px;
     font-size: 2.5vh;
 }
