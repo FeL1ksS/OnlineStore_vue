@@ -1,50 +1,46 @@
 <template>
-    <div class="container-fluid item">
-        <div class="row" style="height: inherit">
-            <div class="col-md-5 col-lg-5 item-img">
-                asd
-            </div>
-            <div class="col ml-5 border item__content">
-                <div class="row mt-5 breadcrumb border">
-                    <ul class="breadcrumb__content">
-                        <li>
-                            <a href="">PRODUCTS</a>
-                        </li>
-                    </ul>
+    <div class="container-fluid h-100 border">
+        <div class="row h-100 border">
+            <div class="col col-sm-12 col-md-5 item-img">
+                <div class="my-auto">
+                    <img src="../assets/img/white-seat.png" alt="">
                 </div>
-                <div class="row catalog__content-item item__content-info border">
-                    <div class="item-description item__content-description w-80">
-                        <h4 class="title">WHITE TABLE</h4>
-                        <p class="subtitle"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, odit? </p>
-                        <div class="row no-gutters">
-                            <div class="col border w-100">
-                                <p class="hint">COST</p>
-                                <p class="price mb-auto">$50</p>
-                            </div>
-                            <div class="col border">
-                                <p class="hint">QUANTITY</p>
-                                <input type="number" name="" class="w-50">
-                                <button class="item-actions header__intro-button">ADD TO CARD</button>
+            </div>
+            <div class="col col-sm-12 col-md-7 pl-5  item__content">
+
+                <div class="row h-100">
+                    <div class="col-md-12 item__content-description">
+                        <div class="mt-5 breadcrumb border">
+                            <ul class="breadcrumb__content">
+                                <li>
+                                    <a href="">PRODUCTS</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- mixing catalog__content-item- -->
+                        <div class="catalog__content-item border">
+                            <div class="item-description">
+                                <h4 class="title">WHITE TABLE - OFFICE</h4>
+                                <p class="subtitle"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, odit? </p>
+                                <div class="row no-gutters">
+                                    <div class="col border w-100">
+                                        <p class="hint">COST</p>
+                                        <p class="price mb-auto">$50</p>
+                                    </div>
+                                    <div class="col border">
+                                        <p class="hint">QUANTITY</p>
+                                        <input type="number" name="" class="" style="width: 20%;">
+                                        <button class="item-actions header__intro-button">ADD TO CARD</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- mixing catalog__content-item- -->
                     </div>
+                    <div class="col-md-12 item__content-collections ">3</div>
                 </div>
             </div>
 
-            <div class="row item__list-content border fixed-bottom">
-                <div class="item__list-collections border">
-                    <div class="item-on-list">1</div>
-                    <div class="item-on-list">2</div>
-                    <div class="item-on-list">3</div>
-                    <div class="item-on-list">4</div>
-                    <div class="item-on-list">5</div>
-                    <div class="item-on-list">6</div>
-                    <div class="item-on-list">7</div>
-                    <div class="item-on-list">8</div>
-                    <div class="item-on-list">9</div>
-                    <div class="item-on-list">10</div>
-                </div>
-            </div>
         </div>
     </div>
 </template>
@@ -56,19 +52,6 @@ export default {
 </script>
 
 <style scoped>
-.item {
-    height: inherit;
-    /* width: 100%; */
-}
-
-.item__content {
-    display: flex;
-    /* width: 100%; */
-    flex-direction: column;
-    justify-content: flex-start;
-    /* overflow-y: hidden; */
-}
-
 .item-img {
     height: inherit;
     overflow: visible;
@@ -76,39 +59,50 @@ export default {
     box-shadow: 0px 0px 25px 0px rgb( 219, 219, 219);
 
     border: 1px solid black;
+    /* text-align: center; */
 }
-
-.item-actions {}
-
-
-.item__content-info {
-    margin: auto 0;
+.item-img img{
+    width: 50%;
+    
 }
-
+.item__content-description {
+    height: 70%;
+    border: 1px solid black;
+}
+.item__content-description .catalog__content-item {
+    width: 70%;
+}
 .item__content-description .hint {
     font-family: "Lato-Light";
     font-size: 1.5vh;
     font-weight: bold;
     color: #828282;
 }
+.catalog__content-item .item-description .title {
+    font-size: 4vh;
+}
 
-.item__list-content {
+.catalog__content-item .item-description .subtitle {
+    margin: 20px 0;
+    font-size: 3vh;
+}
+
+.catalog__content-item .item-description .price {
+    margin-top: 18px;
+    font-family: "Lato-Bold";
+    font-size: 2.8vh;
+}
+
+
+
+.item__content-collections {
     height: 30%;
-    /* width: 120%; */
-    /* margin-left: -10%; */
-    /* overflow: scroll; */
     background-color: rgb( 255, 255, 255);
     box-shadow: 0px 0px 25px 0px rgb( 219, 219, 219);
+    border: 1px solid black;
 }
 
 .item__list-collections {
-
-    /* width: 1500px; */
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: space-around; */
-    /* flex-wrap: nowrap; */
-    /* width: 100%; */
     white-space: nowrap;
     /* overflow: hidden; */
     overflow-x: scroll;
@@ -121,29 +115,6 @@ export default {
     border: 1px solid black;
 }
 
-.Prostokąt_1_kopia_2 {
-    background-color: rgb( 255, 255, 255);
-    box-shadow: 0px 0px 25px 0px rgb( 219, 219, 219);
-    position: absolute;
-    left: 891px;
-    top: 1045px;
-    width: 1410px;
-    height: 393px;
-    z-index: 186;
-}
 
-.catalog__content-item .item-description .title {
-    font-size: 4vh;
-}
-
-.catalog__content-item .item-description .subtitle {
-    font-size: 3vh;
-}
-
-.catalog__content-item .item-description .price {
-    margin-top: 18px;
-    font-family: "Lato-Bold";
-    font-size: 2.8vh;
-}
 </style>
 
