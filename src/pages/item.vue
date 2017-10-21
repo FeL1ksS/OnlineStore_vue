@@ -2,13 +2,13 @@
     <div class="container-fluid h-100 border">
         <div class="row h-100 border">
             <div class="col col-sm-12 col-md-5 item-img">
-                <div class="my-auto">
+                <!-- <div class="ts"> -->
                     <img src="../assets/img/white-seat.png" alt="">
-                </div>
+                <!-- </div> -->
             </div>
-            <div class="col col-sm-12 col-md-7 pl-5  item__content">
+            <div class="col col-sm-12 col-md-7  item__content">
 
-                <div class="row h-100">
+                <div class="row  h-100">
                     <div class="col-md-12 item__content-description">
                         <div class="mt-5 breadcrumb border">
                             <ul class="breadcrumb__content">
@@ -17,8 +17,10 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="vcenter border">
+
                         <!-- mixing catalog__content-item- -->
-                        <div class="catalog__content-item border">
+                        <div class="catalog__content-item  border">
                             <div class="item-description">
                                 <h4 class="title">WHITE TABLE - OFFICE</h4>
                                 <p class="subtitle"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, odit? </p>
@@ -36,6 +38,7 @@
                             </div>
                         </div>
                         <!-- mixing catalog__content-item- -->
+                        </div>
                     </div>
                     <div class="col-md-12 item__content-collections ">3</div>
                 </div>
@@ -54,23 +57,41 @@ export default {
 <style scoped>
 .item-img {
     height: inherit;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     overflow: visible;
     background-color: rgb( 255, 255, 255);
     box-shadow: 0px 0px 25px 0px rgb( 219, 219, 219);
-
+    z-index: 10;
     border: 1px solid black;
     /* text-align: center; */
 }
 .item-img img{
-    width: 50%;
+    display: block;
+    width: 80%;
+    /* margin: auto auto; */
     
 }
+.vcenter{
+    display: flex;
+    height: 85%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 .item__content-description {
     height: 70%;
+    padding-left: 4vw;
     border: 1px solid black;
 }
 .item__content-description .catalog__content-item {
     width: 70%;
+    
 }
 .item__content-description .hint {
     font-family: "Lato-Light";
@@ -98,7 +119,8 @@ export default {
 .item__content-collections {
     height: 30%;
     background-color: rgb( 255, 255, 255);
-    box-shadow: 0px 0px 25px 0px rgb( 219, 219, 219);
+    /* box-shadow: 0px 0px 25px 0px rgb( 219, 219, 219); */
+    z-index: 1;
     border: 1px solid black;
 }
 
@@ -113,6 +135,10 @@ export default {
     height: 64px;
     width: 128px;
     border: 1px solid black;
+}
+
+* {
+    border: none !important;
 }
 
 

@@ -51,7 +51,7 @@
     background-color: rgb( 255, 255, 255);
     box-shadow: 0px 0px 25px 0px rgb( 219, 219, 219);
 
-    z-index: 10;
+    z-index: 100;
 
     /* border: 1px solid grey; */
 }
