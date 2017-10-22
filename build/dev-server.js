@@ -66,7 +66,12 @@ app.use(devMiddleware)
 const staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, './index.html'))
+})
+
 const uri = 'http://localhost:' + port
+
 
 var _resolve
 var _reject
@@ -80,9 +85,7 @@ var portfinder = require('portfinder')
 portfinder.basePort = port
 
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../index.html'))
-})
+
 
 
 console.log('> Starting dev server...')
