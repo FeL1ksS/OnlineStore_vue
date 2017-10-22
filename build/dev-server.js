@@ -80,7 +80,7 @@ var portfinder = require('portfinder')
 portfinder.basePort = port
 
 
-app.get('/*', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../index.html'))
 })
 

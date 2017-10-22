@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "heroku-postbuild": "npm run build",
+    "her": "git subtree push --prefix dist heroku master",
     "serv": "static dist",
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
