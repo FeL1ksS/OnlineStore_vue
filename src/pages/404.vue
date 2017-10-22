@@ -1,61 +1,104 @@
 <template>
-    <div class="container-fluid h-100 border">
-        <!-- <div class="row h-100"> -->
-            <div class="row h-100 border">
-                <div class="col col-sm-12 col-md-6       cl-1 ">1</div>
-                <div class="col col-sm-12 col-md-6 pl-5  cl-2 ">
-                    <div class="row h-100">
-                        <div class="col-md-12 cl-2-1 ">2</div>
-                        <div class="col-md-12 cl-2-2 ">3</div>
-                    </div>
-                </div>
-                
-            </div>
-        <!-- </div> -->
+    <div class="wrapper-swiper">
+
+        <swiper :options="swiperOptionTop" :not-next-tick="notNextTick" ref="swiperTop">
+            <!-- slides -->
+            <swiper-slide>
+                <img src="../assets/img/red-seat.png" alt="" srcset="">
+            </swiper-slide>
+            <swiper-slide>
+                 <img src="../assets/img/blue-seat.png" alt="" srcset="">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="../assets/img/red-seat.png" alt="" srcset="">
+            </swiper-slide>
+            <swiper-slide>
+                 <img src="../assets/img/blue-seat.png" alt="" srcset="">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="../assets/img/red-seat.png" alt="" srcset="">
+            </swiper-slide>
+            <swiper-slide>
+                 <img src="../assets/img/blue-seat.png" alt="" srcset="">
+            </swiper-slide>
+            <!-- Optional controls -->
+            <div class="swiper-pagination" slot="pagination"></div>
+            <div class="swiper-button-prev" slot="button-prev"></div>
+            <div class="swiper-button-next" slot="button-next"></div>
+            <div class="swiper-scrollbar" slot="scrollbar"></div>
+        </swiper>
+        <swiper :options="swiperOptionThumbs" class="gallery-thumbs" ref="swiperThumbs">
+            <!-- slides -->
+            <swiper-slide>
+                <img src="../assets/img/red-seat.png" alt="" srcset="">
+            </swiper-slide>
+            <swiper-slide>
+                 <img src="../assets/img/blue-seat.png" alt="" srcset="">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="../assets/img/red-seat.png" alt="" srcset="">
+            </swiper-slide>
+            <swiper-slide>
+                 <img src="../assets/img/blue-seat.png" alt="" srcset="">
+            </swiper-slide>
+            <swiper-slide>
+                <img src="../assets/img/red-seat.png" alt="" srcset="">
+            </swiper-slide>
+            <swiper-slide>
+                 <img src="../assets/img/blue-seat.png" alt="" srcset="">
+            </swiper-slide>
+            <!-- Optional controls -->
+            <div class="swiper-pagination" slot="pagination"></div>
+            <div class="swiper-button-prev" slot="button-prev"></div>
+            <div class="swiper-button-next" slot="button-next"></div>
+            <div class="swiper-scrollbar" slot="scrollbar"></div>
+        </swiper>
     </div>
 </template>
 
 <script>
-export default {
-
-}
+  export default {
+    data() {
+      return {
+        swiperOptionTop: {
+          notNextTick: true,
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
+          spaceBetween: 10
+        },
+        swiperOptionThumbs: {
+          notNextTick: true,
+          spaceBetween: 10,
+          centeredSlides: true,
+          slidesPerView: 3,
+          touchRatio: 0.2,
+          slideToClickedSlide: true
+        }
+      }
+    },
+    mounted() {
+      const swiperTop = this.$refs.swiperTop.swiper
+      const swiperThumbs = this.$refs.swiperThumbs.swiper
+      swiperTop.params.control = swiperThumbs
+      swiperThumbs.params.control = swiperTop
+    }
+  }
 </script>
 
-<style scoped>
 
-    .cl-1{
-        height: 100%;
-        background: green;
-        /* z-index: 1; */
+<style>
+    .wrapper-swiper {
+        border: 1px solid black;
+        width: 60%;
+        /* height: 20%; */
+        margin: 0 auto;
     }
-    .cl-2{
-        background: orange;
-    }
-
-    .cl-2-1{
-        height: 70%;
-        background: blue;
-    }
-    .cl-2-2{
-        height: 30%;
-        width: 120%;
-        /* margin-left: -3rem; */
-        background: grey;
-        /* margin-left: -10rem !important; */
-    }
-    .r-3{
-        width: 100%;
-        margin-left: -3rem !important;
-        margin-right: -3rem !important;
-        /* margin-left: -17%; */
+    .swiper-slide {
+        margin: 0 auto;
+        /* width: 150px; */
+        /* height: 100px; */
+        /* border: 1px solid black; */
+        text-align: center;
+        /* background: grey; */
     }
 </style>
-
-
-            // <div class="row justify-content-center">
-            //     <div class="col-xs-1">
-            //         <h1>404</h1>
-            //     </div>
-            // </div>
-
-

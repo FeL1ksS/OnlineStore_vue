@@ -10,11 +10,6 @@
                         <i class="material-icons">home</i>
                     <!-- </button> -->
                 </router-link>
-                <router-link to="/item" tag="button" class="left-nav__button">
-                    <!-- <button class="left-nav__button"> -->
-                        <i class="material-icons">item</i>
-                    <!-- </button> -->
-                </router-link>
                 <button class="left-nav__button">
                     <i class="material-icons">shopping_basket</i>
                 </button>

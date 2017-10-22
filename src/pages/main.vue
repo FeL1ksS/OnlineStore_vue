@@ -10,11 +10,11 @@
                 </router-link>
             </div>
             <div class="header__content">
-                <div class="header__content-item">1</div>
+                <!-- <div class="header__content-item">1</div>
                 <div class="header__content-item">2</div>
                 <div class="header__content-item">3</div>
                 <div class="header__content-item">4</div>
-                <div class="header__content-item">5</div>
+                <div class="header__content-item">5</div> -->
             </div>
         </header>
     <!-- </div> -->

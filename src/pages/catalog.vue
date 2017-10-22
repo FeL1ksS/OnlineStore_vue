@@ -13,55 +13,55 @@
         </div>
         <div class="row justify-content-center catalog__content">
             <div class="col-sm-12 col-md-3 col-lg-2">
-                <div class="catalog__content-item catalog__content-item_size_2">
+                <router-link to="/item" tag="div" class="catalog__content-item catalog__content-item_size_2" >
                     <img src="../assets/img/red-seat.png" alt="" srcset="">
                     <div class="item-description">
                         <h4 class="title">RED SEAT</h4>
                         <p class="subtitle">Lorem ipsum dolor sit amet.</p>
                         <p class="price">$45</p>
                     </div>
-                </div>
+                </router-link>
             </div>
             <div class=" col-sm-12 col-md-8 col-lg-6">
-                <div class="catalog__content-item catalog__content-item_size_6">
+                <router-link to="/item" tag="div" class="catalog__content-item catalog__content-item_size_6">
                     <img src="../assets/img/white-table.png" alt="" srcset="">
                     <div class="item-description">
                         <h4 class="title">WHITE TABLE</h4>
                         <p class="subtitle">Lorem ipsum dolor sit amet.</p>
                         <p class="price">$350</p>
                     </div>
-                </div>
+                </router-link>
             </div>
             <div class="w-100"></div>
             <div class="col-sm-12 col-md-3 col-lg-2">
-                <div class="catalog__content-item catalog__content-item_size_2">
+                <router-link to="/item" tag="div" class="catalog__content-item catalog__content-item_size_2">
                     <img src="../assets/img/blue-seat.png" alt="" srcset="">
                     <div class="item-description">
                         <h4 class="title">BLUE SEAT</h4>
                         <p class="subtitle">Lorem ipsum dolor sit amet.</p>
                         <p class="price">$35</p>
                     </div>
-                </div>
+                </router-link>
             </div>
             <div class="col-md-8 col-lg-4">
-                <div class="catalog__content-item catalog__content-item_size_4">
+                <router-link to="/item" tag="div" class="catalog__content-item catalog__content-item_size_4">
                     <img src="../assets/img/modern-bed.png" alt="" srcset="">
                     <div class="item-description">
-                        <h4 class="title">RED SEAT</h4>
+                        <h4 class="title">MODERN BED</h4>
                         <p class="subtitle">Lorem ipsum dolor sit amet.</p>
                         <p class="price">$120</p>
                     </div>
-                </div>
+                </router-link>
             </div>
             <div class="col-md-11 col-lg-2">
-                <div class="catalog__content-item catalog__content-item_size_2">
+                <router-link to="/item" tag="div" class="catalog__content-item catalog__content-item_size_2">
                     <img src="../assets/img/dark-seat.png" alt="" srcset="">
                     <div class="item-description">
                         <h4 class="title">RED SEAT</h4>
                         <p class="subtitle">Lorem ipsum dolor sit amet.</p>
                         <p class="price">$50</p>
                     </div>
-                </div>
+                </router-link>
             </div>
         </div>
     </div>
