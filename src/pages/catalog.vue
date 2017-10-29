@@ -13,7 +13,7 @@
         </div>
         <div class="row justify-content-center catalog__content">
             <div class="col-sm-12 col-md-3 col-lg-2">
-                <router-link to="/item" tag="div" class="catalog__content-item catalog__content-item_size_2" >
+                <router-link to="/item" tag="div" class="catalog__content-item catalog__content-item_size_2">
                     <img src="../assets/img/red-seat.png" alt="" srcset="">
                     <div class="item-description">
                         <h4 class="title">RED SEAT</h4>
@@ -68,8 +68,16 @@
 </template>
 
 <script>
+import axios from 'axios';
+var querystring = require('querystring');
 export default {
 
+    created() {
+        axios.post('http://localhost:8080/tq', 
+            querystring.stringify({ foo: 'bar' })
+        )
+        console.log('отправлено')
+    }
 }
 </script>
 
@@ -109,7 +117,8 @@ export default {
 
 .catalog__content-item img {}
 
-.catalog__content-item .item-description .title, .subtitle{
+.catalog__content-item .item-description .title,
+.subtitle {
     margin: 5px;
     font-family: "Lato-Light";
 }
@@ -132,6 +141,7 @@ export default {
 }
 
 
+
 /* -------------------------------------- */
 
 .catalog__content-item_size_2 {
@@ -149,6 +159,7 @@ export default {
     margin-top: 5px;
     margin-bottom: 10px;
 }
+
 
 
 /* -------------------------------------- */
@@ -184,6 +195,7 @@ export default {
 }
 
 
+
 /* -------------------------------------- */
 
 .catalog__content-item_size_6 {
@@ -216,6 +228,7 @@ export default {
     margin-top: 10px;
     font-size: 2.5vh;
 }
+
 
 
 /* -------------------------------------- */

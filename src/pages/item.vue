@@ -119,6 +119,12 @@ export default {
 </script>
 
 <style scoped>
+* {
+    /* border: 1px solid black; */
+    border: none !important;
+}
+
+
 .item-img {
     height: inherit;
 
@@ -126,6 +132,7 @@ export default {
     /* flex-direction: column; */
     /* justify-content: center;  */
     /* align-items: center; */
+
     overflow: hidden;
     padding-left: 0; 
     padding-right: 0; 
@@ -135,7 +142,6 @@ export default {
     border: 1px solid black;
     text-align: center;
 }
-
 
 
 .swiper-slide {
@@ -152,12 +158,15 @@ export default {
 }
 
 .gallery-top .swiper-slide img {
+    display: block;
     width: 100%;
     height: auto;
 }
 
 .gallery-thumbs .swiper-slide img {
+    display: block;
     width: 75%;
+    margin: 0 auto;
     height: auto;
 }
 
@@ -233,8 +242,6 @@ export default {
     border: 1px solid black;
 }
 
-* {
-    border: none !important;
-}
+
 </style>
 

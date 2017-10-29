@@ -14,8 +14,11 @@
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "axios": "^0.17.0",
+    "body-parser": "^1.18.2",
     "bootstrap": "^4.0.0-beta",
     "material-design-icons": "^3.0.1",
+    "mongodb": "^2.2.33",
     "node-static": "^0.7.10",
     "normalize.css": "^7.0.0",
     "vue": "^2.4.2",

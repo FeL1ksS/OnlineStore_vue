@@ -53,7 +53,26 @@
             <div class="swiper-button-next" slot="button-next"></div>
             <div class="swiper-scrollbar" slot="scrollbar"></div>
         </swiper>
+    
+
+
+
+
+    <div class="ras">
+        <div class="bk1"></div>
+        <div class="bk1"></div>
+        <div class="bk1"></div>
+        <div class="bk1"></div>
+        <div class="bk1"></div>
     </div>
+
+
+</div>
+
+
+
+
+
 </template>
 
 <script>
@@ -87,6 +106,18 @@
 
 
 <style>
+    .ras {
+        height: 500px;
+        width: 800px;
+        border: 1px solid black;
+    }
+    .bk1 {
+        /* display: inline-block; */
+        height: 200px;
+        width: 200px;
+        background: black;
+    }
+
     .wrapper-swiper {
         border: 1px solid black;
         width: 60%;

@@ -66,9 +66,7 @@ app.use(devMiddleware)
 const staticPath = path.posix.join(config.dev.assetsPublicPath, config.dev.assetsSubDirectory)
 app.use(staticPath, express.static('./static'))
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, './index.html'))
-})
+
 
 const uri = 'http://localhost:' + port
 
@@ -86,6 +84,23 @@ portfinder.basePort = port
 
 
 
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, './index.html'))
+})
+
+// ---------------------
+const MongoClient    = require('mongodb').MongoClient;
+const bodyParser     = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.post('/tq', (req, res) => {
+  // Здесь будем создавать заметку.
+  console.log(req.body)
+  // res.send('Hello')
+});
+
+// ---------------------
 
 
 console.log('> Starting dev server...')
